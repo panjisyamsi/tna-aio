@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>TNA Self-Assessment — PT. Amerta Indah Otsuka</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--sf:#fff;--sf2:#f0f3fa;--bd:#e2e7f0;--pr:#1a3d7c;--ac:#2563eb;--acl:#eff4ff;
+--cc:#1a3d7c;--cb:#e8edf8;--rc:#166534;--rb:#dcfce7;--jc:#854d0e;--jb:#fef9c3;
+--tx:#1a1f36;--t2:#4a5568;--t3:#718096;--rd:12px;--rs:8px;
+--sh:0 1px 3px rgba(0,0,0,.07),0 4px 14px rgba(0,0,0,.05)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh;font-size:14px;line-height:1.6}
+.hdr{background:var(--pr);color:#fff;padding:14px 18px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(26,61,124,.3)}
+.hdr h1{font-size:14px;font-weight:700}
+.hdr p{font-size:11px;opacity:.72;margin-top:1px}
+.pw{margin-top:9px;background:rgba(255,255,255,.2);border-radius:99px;height:3px;display:none}
+.pf{height:3px;background:#60a5fa;border-radius:99px;transition:width .4s;width:0%}
+.pl{font-size:10px;opacity:.65;margin-top:3px;font-family:'DM Mono',monospace}
+.wrap{max-width:660px;margin:0 auto;padding:18px 15px 100px}
+.screen{display:none}.screen.active{display:block;animation:fi .25s ease}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--sf);border-radius:var(--rd);box-shadow:var(--sh);padding:18px;margin-bottom:14px;border:1px solid var(--bd)}
+.ct{font-size:11px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.8px;margin-bottom:14px;padding-bottom:9px;border-bottom:1px solid var(--bd)}
+.fg{margin-bottom:14px}
+.fl{display:block;font-size:13px;font-weight:600;color:var(--tx);margin-bottom:5px}
+.fl span{color:#dc2626}
+.fi,.fs{width:100%;padding:11px 13px;border:1.5px solid var(--bd);border-radius:var(--rs);font-family:inherit;font-size:14px;color:var(--tx);background:var(--sf);transition:border-color .2s,box-shadow .2s;-webkit-appearance:none}
+.fi:focus,.fs:focus{outline:none;border-color:var(--ac);box-shadow:0 0 0 3px rgba(37,99,235,.1)}
+.fs{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%234a5568' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 11px center;padding-right:34px}
+.tog{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 14px;background:var(--sf2);border:1.5px solid var(--bd);border-radius:var(--rs);cursor:pointer;transition:border-color .2s}
+.tog:hover{border-color:var(--ac)}.tog.on{border-color:var(--ac);background:var(--acl)}
+.tl{font-size:13px;font-weight:600;color:var(--tx)}
+.ts{font-size:11px;color:var(--t3);margin-top:2px}
+.tk{width:42px;height:24px;border-radius:99px;background:var(--bd);position:relative;flex-shrink:0;transition:background .2s}
+.tk.on{background:var(--ac)}
+.tk::after{content:'';position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.tk.on::after{transform:translateX(18px)}
+.sh{border-radius:var(--rd);padding:13px 16px;margin-bottom:12px;border-left:4px solid}
+.sh.core{background:var(--cb);border-color:var(--cc)}
+.sh.role{background:var(--rb);border-color:var(--rc)}
+.sh.jf{background:var(--jb);border-color:var(--jc)}
+.shr{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.sht{font-size:13px;font-weight:700}
+.core .sht{color:var(--cc)}.role .sht{color:var(--rc)}.jf .sht{color:var(--jc)}
+.shd{font-size:11px;margin-top:3px;opacity:.8}
+.shb{font-size:10px;font-weight:700;font-family:'DM Mono',monospace;padding:3px 8px;border-radius:99px;white-space:nowrap;flex-shrink:0}
+.core .shb{background:var(--cc);color:#fff}.role .shb{background:var(--rc);color:#fff}.jf .shb{background:var(--jc);color:#fff}
+.cb{background:var(--sf);border-radius:var(--rd);border:1px solid var(--bd);box-shadow:var(--sh);margin-bottom:14px;overflow:hidden}
+.ch{padding:13px 16px;background:var(--sf2);border-bottom:1px solid var(--bd)}
+.cn{font-size:14px;font-weight:700;color:var(--tx)}
+.lb{border-bottom:1px solid var(--bd)}.lb:last-child{border-bottom:none}
+.lh{padding:12px 16px 6px}
+.lt{font-size:13px;font-weight:700;color:var(--tx)}
+.ls{font-size:12px;font-weight:600;color:var(--t2);margin-top:2px}
+.li{font-size:11px;color:var(--t3);font-style:italic;margin:7px 0 4px;padding:8px 10px;background:#fafbff;border-radius:6px;border:1px solid var(--bd);line-height:1.5}
+.il{padding:4px 16px 10px}
+.ii{display:flex;align-items:flex-start;gap:9px;padding:7px 9px;border-radius:6px;margin-bottom:3px;cursor:pointer;transition:background .12s}
+.ii:hover{background:var(--acl)}.ii.on{background:var(--acl)}
+.ii input[type=checkbox]{width:16px;height:16px;flex-shrink:0;margin-top:2px;accent-color:var(--ac);cursor:pointer}
+.in{font-size:11px;font-weight:700;color:var(--t3);font-family:'DM Mono',monospace;flex-shrink:0;margin-top:1px;min-width:16px}
+.it{font-size:13px;color:var(--tx);line-height:1.5}
+.ii.on .it{color:var(--ac);font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:12px 22px;border-radius:var(--rs);font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;border:none;transition:all .18s}
+.bp{background:var(--ac);color:#fff;width:100%;box-shadow:0 2px 8px rgba(37,99,235,.28)}
+.bp:hover{background:#1d4ed8;transform:translateY(-1px)}.bp:disabled{background:#93c5fd;cursor:not-allowed;transform:none;box-shadow:none}
+.bs{background:var(--sf);color:var(--tx);border:1.5px solid var(--bd);width:100%}
+.bs:hover{background:var(--sf2)}
+.blg{padding:15px 22px;font-size:15px}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--bd);padding:11px 15px;box-shadow:0 -4px 18px rgba(0,0,0,.07);z-index:99}
+.navi{max-width:660px;margin:0 auto;display:flex;gap:9px}
+.al{padding:11px 13px;border-radius:var(--rs);font-size:12.5px;margin-bottom:12px;display:flex;align-items:flex-start;gap:8px}
+.ai{background:var(--acl);color:#1e40af;border:1px solid #bfdbfe}
+.tsm{font-size:12px;color:var(--t3)}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <h1>TNA Self-Assessment — PT. Amerta Indah Otsuka</h1>
+  <p id="hSub">Silakan lengkapi data diri untuk memulai</p>
+  <div class="pw" id="pw"><div class="pf" id="pf"></div></div>
+  <div class="pl" id="pl"></div>
+</div>
+
+<div class="wrap">
+
+  <div class="screen active" id="s-welcome">
+    <div style="text-align:center;padding:28px 0 20px">
+      <div style="font-size:44px;margin-bottom:14px">📋</div>
+      <h2 style="font-size:20px;font-weight:700;color:var(--pr);margin-bottom:8px">Training Needs Analysis</h2>
+      <p style="font-size:13px;color:var(--t3);line-height:1.7;max-width:340px;margin:0 auto">Identifikasi kebutuhan pengembangan kompetensimu berdasarkan perilaku kerja yang sudah konsisten kamu tunjukkan.</p>
+    </div>
+    <div class="card">
+      <div class="ct">Sebelum Memulai</div>
+      <div class="al ai"><span>💡</span><div>Centang indikator perilaku yang <strong>sudah konsisten</strong> kamu tunjukkan dalam pekerjaan sehari-hari. Tidak ada jawaban benar atau salah — isi sesuai kondisi aktualmu.</div></div>
+      <p class="tsm">Estimasi waktu pengisian: 15–25 menit tergantung jumlah kompetensi di divisimu.</p>
+    </div>
+    <button class="btn blg bp" onclick="show('s-profile')">Mulai Pengisian →</button>
+  </div>
+
+  <div class="screen" id="s-profile">
+    <div class="card">
+      <div class="ct">Data Diri</div>
+      <div class="fg"><label class="fl">Nama Lengkap <span>*</span></label><input class="fi" id="f-name" type="text" placeholder="Masukkan nama lengkap" oninput="chk()"></div>
+      <div class="fg"><label class="fl">NIK <span>*</span></label><input class="fi" id="f-nik" type="text" placeholder="Nomor Induk Karyawan" inputmode="numeric" oninput="chk()"></div>
+      <div class="fg">
+        <label class="fl">Divisi <span>*</span></label>
+        <select class="fs" id="f-div" onchange="chk()">
+          <option value="">-- Pilih Divisi --</option>
+        </select>
+      </div>
+      <div class="fg"><label class="fl">Jabatan <span>*</span></label><input class="fi" id="f-job" type="text" placeholder="Tulis jabatanmu" oninput="chk()"></div>
+      <div class="fg">
+        <label class="fl">Apakah kamu memiliki bawahan langsung? <span>*</span></label>
+        <div class="tog" id="tog" onclick="togSub()">
+          <div><div class="tl" id="tl">Tidak — saya tidak memiliki bawahan</div><div class="ts">Role Competency hanya muncul jika memiliki bawahan</div></div>
+          <div class="tk" id="tk"></div>
+        </div>
+      </div>
+    </div>
+    <div class="nav"><div class="navi">
+      <button class="btn bs" onclick="show('s-welcome')" style="width:auto;padding:12px 18px">← Kembali</button>
+      <button class="btn bp" id="btn-start" onclick="start()" disabled>Mulai Assessment →</button>
+    </div></div>
+  </div>
+
+  <div class="screen" id="s-assess">
+    <div id="ac"></div>
+    <div class="nav"><div class="navi">
+      <button class="btn bs" id="bprev" onclick="prev()" style="width:auto;padding:12px 18px;visibility:hidden">← Prev</button>
+      <button class="btn bp" id="bnext" onclick="next()">Lanjut →</button>
+    </div></div>
+  </div>
+
+  <div class="screen" id="s-send">
+    <div style="text-align:center;padding:70px 20px">
+      <div style="font-size:42px;margin-bottom:18px">⏳</div>
+      <h2 style="font-size:18px;font-weight:700;color:var(--pr);margin-bottom:8px">Mengirim Data...</h2>
+      <p class="tsm">Harap tunggu sebentar.</p>
+    </div>
+  </div>
+
+  <div class="screen" id="s-done">
+    <div style="text-align:center;padding:32px 0 20px">
+      <div style="font-size:56px;margin-bottom:14px">✅</div>
+      <h2 style="font-size:20px;font-weight:700;color:var(--pr);margin-bottom:8px">Terima Kasih!</h2>
+      <p style="font-size:13px;color:var(--t3);line-height:1.7;max-width:340px;margin:0 auto">Self-assessment kamu telah berhasil dikirim dan akan diproses oleh HR untuk keperluan kalibrasi.</p>
+    </div>
+    <div class="card"><div class="ct">Konfirmasi Pengisian</div><div id="dd"></div></div>
+    <div style="margin-top:16px"><button class="btn bs" onclick="reset()">Isi Ulang / Karyawan Lain</button></div>
+  </div>
+
+</div>
+
+<script>
+const D={"divisi":["HCD","Corporate Communications","Finance, Accounting & Tax","Sales","SCM","Marketing","CA & Legal","Internal Audit","Information Technology (IT)","Business Development","RnD","Quality Assurance","Production","Engineering","Plant"],"div_jf":{"Finance, Accounting & Tax":["AT","CO","INT"],"Sales":["INFO","CO","CT","RB","FLX","OC"],"SCM":["CT","CO","INFO","OC","FLX"],"Marketing":["INFO","CT","RB","FLX"],"CA & Legal":["AT","CO","INFO","IMP"],"Information Technology (IT)":["AT","CT","INT","INFO"],"Corporate Communications":["OA","RB","FLX"]},"core":{"ACH":{"name":"ACH","levels":{"1":{"header":"Melakukan pekerjaan dengan baik","indicators":["Mengetahui standar hasil pekerjaan yang diharapkan darinya","Melakukan tugas atau pekerjaan yang diberikan sesuai dengan petunjuk","Menambah pengetahuan agar dapat mengerjakan tugas dengan baik","Mengumpulkan informasi yang diperlukan untuk dapat menemukan solusi atas masalah pekerjaan yang dihadapi"]},"2":{"header":"Menyelesaikan target kerja","indicators":["Mempergunakan anggaran sesuai dengan efektif dan efisien","Konsisten memenuhi persyaratan kualitas/mutu hasil kerja","Konsisten mencapai target kerja","Mampu mengevaluasi diri sendiri (cara kerja dan hasil kerja)","Melakukan HORENSO dalam aktivitas keseharian"]},"3":{"header":"Memperbaiki kinerja","indicators":["Menentukan target yang menantang, namun terukur dan dapat dicapai","Menyusun dan menjalankan rencana kerja demi mencapai/melebihi target; cepat mengambil keputusan","Melakukan evaluasi atas rencana kerja, metode kerja, dan hasil kerja untuk menemukan hal-hal yang dapat diperbaiki/kembangkan","Melakukan perbaikan/perubahan rencana kerja/metode kerja, sesuai hasil evaluasi, agar menghasilkan pekerjaan yang sesuai rencana dan sesuai dengan standar kualitas yang ditentukan","Membuat perubahan spesifik dalam sistem atau metode kerja untuk meningkatkan kinerja"]},"4":{"header":"Membuat analisa cost-benefit dan melakukan tindakan dengan resiko yang terkalkulasi","indicators":["Menetapkan prioritas target berdasarkan analisa cost-benefit (seperti: menimbang profit yang potensial, dan risk atau return-on-investment) dan sasaran perusahaan","Menentukan metode/bahan baku/cara kerja yang lebih baik dalam proses pencapaian target kerja pribadi secara efektif dan efisien","Menentukan metode evaluasi yang mudah dipahami dan sesuai dengan kebutuhan perusahaan","Menentukan bentuk perbaikan yang diperlukan berdasarkan analisa cost-benefit, perkembangan industri, dan kebutuhan perusahaan"]},"5":{"header":"Melakukan terobosan","indicators":["Menetapkan sasaran perusahaan berdasarkan analisa internal dan eksternal","Menetapkan strategi dalam pencapaian sasaran perusahaan berdasarkan analisis data makro dan bisnis secara luas serta sumber daya perusahaan secara komprehensif","Mengevaluasi strategi perusahaan berdasarkan analisa komprehensif","Mengembangkan prosedur dan cara kerja baru dalam mencapai hasil kerja yang melebihi target perusahaan dengan memperhatikan kompleksitas risiko yang mungkin timbul"]}}},"TW":{"name":"TW","levels":{"1":{"header":"Bekerjasama di dalam kelompok","indicators":["Mendukung dan menjalankan keputusan tim (Menjalankan perannya di dalam tim)","Memberikan pendapat dan menerima pendapat dalam setiap diskusi","Berbagi informasi yang bermanfaat dalam menjalankan pekerjaan"]},"2":{"header":"Menyatakan sikap dan harapan positif team atau anggota team","indicators":["Mengemukakan pendapat dengan cara yang positif","Mendengarkan dan memahami apa yang disampaikan oleh orang lain","Menerima kritik dan saran dari orang lain dengan sikap yang positif","Aktif berpartisipasi dalam suatu pekerjaan"]},"3":{"header":"Meminta masukan","indicators":["Menghormati pendapat orang lain","Memastikan setiap anggota tim menyampaikan masukan (dan empunyai hak suara)","Berdiskusi dengan anggota tim/rekan kerja sebelum mengambil keputusan","Memastikan terjalinnya komunikasi aktif antar anggota tim"]},"4":{"header":"Memberikan dorongan","indicators":["Memberikan apresiasi atas upaya, prestasi, atau komitmen karyawan .","Memberikan dukungan terhadap bagian lain sesuai dengan fungsi kerja","Menyelesaikan konflik atau permasalahan dengan bagian lain dengan mencari win-win solution"]},"5":{"header":"Membangun semangat kelompok","indicators":["Menciptakan suasana/sistem kolaborasi yang baik dan akrab dalam tim, terlepas dari suka atau tidak suka pada seseorang","Memastikan terbangunnya suasana saling percaya antar tim di dalam perusahaan","Membangun hubungan interpersonal antar tim dan anggota-anggotanya"]}}},"ING":{"name":"ING","levels":{"1":{"header":"Jujur dan cepat dalam menyampaikan informasi dengan konsisten","indicators":["Memberikan senyum, sapa, salam kepada orang lain","Berbicara sesuai fakta/jujur","Mendengarkan dan mencatat kebutuhan, permintaan, pertanyaan, atau tanggapan orang lain","Bertindak sesuai nilai dan kebijakan perusahaan","Memberikan informasi terkini kepada mereka yang membutuhkan, sesuai dengan wewenangnya dan aturan perusahaan","Berani mengakui bila melakukan kesalahan"]},"2":{"header":"Menyelaraskan perkataan dengan perbuatan","indicators":["Bertindak sesuai dengan perkataan.","Menepati janji yang sudah dibuat, secara tepat guna dan tepat waktu","Dipercaya oleh orang lain (internal atau eksternal)","Menginformasikan solusi atas kebutuhan orang lain yang sesuai dengan aturan","Bersikap adil"]},"3":{"header":"Bertindak sesuai aturan perusahaan","indicators":["Menggali informasi mengenai kekurangan, kebutuhan, harapan orang lain sesuai dengan tugas dan tanggung jawabnya","Merekomendasikan perubahan aturan/perbaikan produk/sistem/ kebijakan perusahaan terkait kebutuhan/ penyimpangan//keluhan terkait bidang kerjanya","Dengan segera memperbaiki kesalahan yang terjadi","Melaporkan dugaan atau temuan penyimpangan terhadap aturan perusahaan","Bertindak sesuai dengan kode etik profesi dan bisnis"]},"4":{"header":"Bertindak berdasarkan nilai-nilai penting sekalipun hal tersebut menimbulkan resiko/tekanan yang besar","indicators":["Merancang sistem yang memastikan adanya transparansi dan kejujuran dalam setiap aktivitas di wilayah kerjanya","Memberhentikan karyawan yang melanggar aturan perusahaan meskipun berprestasi","Menyediakan diri untuk memberikan bantuan kepada orang lain terkait informasi atau kebutuhan lainnya","Memberhentikan suatu proses pekerjaan jika terkait praktek bisnis yang tidak sesuai kode etik","Bersikap adil, sesuai konteks dan nilai perusahaan tanpa kompromi"]},"5":{"header":"Membudayakan perilaku berintegritas","indicators":["Secara konsisten memberi contoh perilaku jujur, dapat dipercaya, terbuka, melayani dan menghormati orang lain","Mempengaruhi pihak internal dan eksternal agar bertindak sesuai dengan nilai-nilai perusahaan","Membangun sistem sebagai alat untuk menerapkan nilai-nlai perusahaan, seperti mengubah cara kerja, cara pelaporan."]}}},"CRT":{"name":"CRT","levels":{"1":{"header":"Menunjang inovasi","indicators":["Mencari masukan ide dari pihak lain dalam rangka membuat solusi yang lebih kreatif.","Mengungkapkan ide - ide kreatif untuk perbaikan","Mendukung terwujudnya lingkungan yang kreatif di antara karyawan untuk membantu pembelajaran agar dapat menghasilkan ide, pandangan, dan kesempatan baru.","Bekerja dengan pihak lain untuk merencanakan langkah-langkah yang dibutuhkan dalam mengimplementasikan ide baru."]},"2":{"header":"Membuat solusi yang kreatif","indicators":["Mencari tahu pendekatan-pendekatan baru yang unik dan terbaru bagi organisasi atau industri untuk dapat membuat solusi ataupun inovasi yang baru","Mencoba solusi baru yang belum dicoba sebelumnya, tapi menggunakan penilaian seseorang untuk mengevaluasi dan meminimalisasi resiko yang ditimbulkan","Berdiskusi atas masukan-masukan (yang berbeda dari yang lain) untuk memperoleh bermacam-macam alternatif tindakan dan konsekuensi (melakukan analisa sebab-akibat).","Berani mencoba ataupun menggunakan  hal / pendekatan / cara baru"]},"3":{"header":"Menantang kenyamanan","indicators":["Secara terus menerus mencoba menemukan cara kerja yang lebih baik, lebih cepat, lebih mudah","Mengenali kesempatan untuk membuat perbaikan, dan secara proaktif menawarkan ide-ide perbaikan","Menghasilkan ide-ide terobosan baru"]},"4":{"header":"Mengaplikasikan kreativitas untuk perbaikan","indicators":["Menerapkan beragam teknik dalam menghasilkan ide-ide (misal, analisa kebutuhan, identifikasi masalah, dan brainstorming).","Mengambil inisiatif untuk memahami produk, proses, dan teknologi baru; mengidentifikasi kesempatan untuk menerapkannya di perusahaan","Mendorong orang lain untuk menerima dan mau menerapkan hal yang baru","Memastikan kejelasan penerapan hal-hal baru untuk memperlancar proses perubahan","Berpikir akan biaya dan manfaat jangka pendek dan jangka panjang dalam mengimplementasikan ide kreatif"]},"5":{"header":"Membangun budaya kreativitas","indicators":["Beradaptasi atau memodifikasi pendekatan-pendekatan konvensional untuk memperoleh hasil yang lebih baik","Mengevaluasi kelayakan ide-ide terobosan baru","Mendorong terciptanya produk baru yang inovatif, diterima oleh pasar, dan memiliki manfaat bagi manusia","Membangun sistem kebijakan yang mendorong munculnya kreativitas di lingkungan kerja"]}}}},"role":{"DEV":{"name":"DEV","levels":{"1":{"header":"Percaya akan potensi orang lain","indicators":["Memberitahukan cara mengerjakan sesuatu, memberi saran yang spesifik dan bermanfaat","Memeriksa dan memberikan tanggapan atas hasil kerja","Secara berkala melakukan pendampingan bawahan (tandem) dalam melaksanakan pekerjaannya","Memberi instruksi rinci dan/atau on-the-job demonstration"]},"2":{"header":"Memberikan instruksi jangka pendek","indicators":["Mengenali potensi/keunggulan bawahan","Berbagi informasi, nasihat, trik-trik dan saran untuk dapat bekerja dengan lebih efektif dan efisien","Mampu memberikan pelatihan/bimbingan yang efektif","Memastikan saran pelatihan/bimbingan dipahami dan dilakukan oleh bawahan/orang lain"]},"3":{"header":"Memberikan penjelasan dan dukungan","indicators":["Memberi arahan dan contoh dengan penjelasan rasional sesuai strategi pelatihan","Memberi dukungan praktis untuk memudahkan pekerjaan bawahan (memberi tambahan sumber daya, alat, informasi, saran ahli)","Mengajukan pertanyaan, memberi tes atau menggunakan metode lain untuk memastikan bahwa orang tersebut telah memahami penjelasan yang diberikan","Mengevaluasi dan memperbaiki program pengembangan yang ada"]},"4":{"header":"Menyusun strategi pelatihan dan pengembangan SDM","indicators":["Aktif menganalisis kebutuhan pelatihan & pengembangan","Memastikan kecukupan kompetensi bawahan dalam melaksanakan tugas dan peran mereka dengan mendisain strategi pelatihan dan pengembangan (IDP/TDP)","Memberikan rekomendasi dalam penyusunan kebijakan terkait program pelatihan dan pengembangan","Memastikan berjalannya kebijakan program pelatihan di area pengaruhnya dengan melakukan promosi, kontrol, evaluasi dan pengembangan program"]},"5":{"header":"Menetapkan strategi pembelajaran","indicators":["Memastikan kesiapan perusahaan dalam melatih dan mengembangkan kemampuan karyawan","Mengidentifikasi dan menentukan kebutuhan serta arah pelatihan dan pengembangan SDM, sesuai perkembangan ilmu pengetahuan dan kebutuhan perusahaan","Menetapkan kebijakan terkait program pelatihan dan pengembangan"]}}},"DIR":{"name":"DIR","levels":{"1":{"header":"Memberikan pengarahan","indicators":["Memberikan arahan kerja yang cukup","Menyatakan kebutuhan/keperluan dengan jelas","Mendelegasikan tugas-tugas rutin agar dapat memusatkan perhatian pada hal-hal yang membutuhkan pertimbangan yang lebih bernilai atau berjangka panjang"]},"2":{"header":"Menetapkan batasan","indicators":["Dengan jelas menyampaikan / menetapkan target yang harus dicapai oleh bawahan","Menentukan batasan terhadap perilaku orang lain","Mungkin dapat memanipulasi situasi untuk membatasi pilihan orang lain, atau memaksa mereka untuk menyediakan sumber daya yang diinginkan.","Dengan tegas mengatakan “tidak” terhadap permintaan yang tidak masuk akal"]},"3":{"header":"Menuntut kinerja yang tinggi","indicators":["Memastikan kinerja anggota tim sesuai dengan target dan norma yang ada","Menuntut kualitas atau sumber daya yang tinggi","Meminta dengan tegas untuk mematuhi permintaannya","Menyatakan konsekuensi bagi yang berkinerja buruk"]},"4":{"header":"Menjaga standar kinerja yang jelas","indicators":["Secara terang-terangan memantau kinerja diperbandingkan dengan standar yang sudah jelas","Memberi peringatan yang jelas terhadap hasil kerja individu yang tidak sesuai dengan standar kinerja yang sudah baku","Menyusun dan mengimplementasikan norma perilaku, panduan kerja, dan kinerja tim","Merekomendasikan dan memastikan sistem reward/punishment dipahami dan dijalankan"]},"5":{"header":"Bertindak tegas terhadap Masalah Kinerja","indicators":["Mengungkapkan secara langsung dan terbuka terhadap orang lain yang memiliki masalah kinerja","Menetapkan kebijakan terkait desain sistem reward/punishment untuk memastikan kepatuhan terhadap aturan dan arahan","Menetapkan norma-norma perilaku untuk groupnya (“rule engagement) and memberikan sanksi yang telah melanggarnya."]}}},"TL":{"name":"TL","levels":{"1":{"header":"Memimpin pertemuan / diskusi dengan baik","indicators":["Jelas dalam mengemukakan tujuan, agenda, mengendalikan waktu, memberi tugas, dll.","Mengetahui sumber daya yang dimilikinya, seperti jumlah orang, waktu, dan peralatan","Menunjukkan cara untuk menyelesaikan pekerjaan","Aktif dalam berdiskusi dan berpendapat"]},"2":{"header":"Menjaga agar orang-orang tetap terinformasi","indicators":["Memberikan kejelasan tentang sasaran tim dan bagaimana kontribusi setiap anggota dalam mencapai sasaran tersebut.","Memastikan anggota tim mendapatkan informasi yang diperlukan untuk dapat menyelesaikan tugas","Melakukan tindakan spesifik dengan tujuan mendorong anggota tim berfungsi secara optimal"]},"3":{"header":"Meningkatkan efektivitas tim","indicators":["Menciptakan kondisi yang memungkinkan tim untuk berkinerja terbaik (seperti menetapkan tanggung jawab/wewenang, struktur yang sesuai, dan orang yang tepat)","Merekomendasikan kebutuhan timnya akan sumber daya dalam usaha menyelesaikan tugas yang harus diselesaikan","Meningkatkan moral dan produktivitas tim (seperti dengan menambah, merotasi atau memutasi seseorang, serta memberi pelatihan dan penugasan bagi tim","Mencari input dari orang lain untuk meningkatkan efektivitas tim","Menumbuhkan semangat tim untuk meningkatkan efektivitas tim."]},"4":{"header":"Memberikan dukungan kepada anggota tim","indicators":["Memberikan atau memastikan dukungan dan pengembangan untuk anggota tim dan tim secara keseluruhan","Memastikan kebutuhan praktis tim terpenuhi: mendapatkan orang yang tepat, sumber daya yang sesuai, dan informasi.","Mendorong anggota tim untuk bertindak mengikuti norma perilaku, panduan kerja dan kinerja tim yang berlaku","Membangkitkan kepercayaan terhadap tujuan perusahaan dan mengambil langkah antisipasi terhadap perbedaan pendapat","Mengajak dan memotivasi anggota tim untuk bekerja bersama dalam menyelesaikan tugas"]},"5":{"header":"Membangun sinergi untuk pencapaian tujuan perusahaan","indicators":["Memastikan “penerimaan” anggota tim tentang visi, sasaran, dan kebijakan tim melalui komunikasi dan perilakunya.","Menetapkan standarisasi sumber daya yang dibutuhkan perusahaan dalam melaksanakan strategi","Membangun budaya saling berkoordinasi, berkomunikasi dan berdiskusi antar bagia demi tercapainya target tim","Memberikan contoh dengan melakukan perilaku yang diinginkan.","Mendorong proses belajar, berbagi, dan berkembang bersama demi kemajuan perusahaan"]}}}},"jf":{"AT":{"name":"Analytical Thinking - AT","levels":{"1":{"header":"Menguraikan masalah","indicators":["Memecah-mecah suatu kejadian/masalah/tugas ke dalam beberapa poin kunci","Menyusun daftar aktivitas dan apa saja yang diperlukan"]},"2":{"header":"Melihat hubungan dasar","indicators":["Melihat hubungan sebab akibat yang sederhana antar dua bagian, misalnya A mengakibatkan B","Memisahkan situasi menjadi dua bagian: pro dan kontra.","Mengurutkan daftar tugas berdasarkan urutan kepentingannya/ prioritas","Contoh: ’saya menilai penjualan turun karena kualitas produk turun’"]},"3":{"header":"Melihat hubungan ganda","indicators":["Membuat hubungan ganda (multiple), mengidentifikasi beberapa faktor penyebab yang potensial atau konsekuensi-konsekuensi dari berbagai tindakan","Menganalisa hubungan antara beberapa bagian dari suatu masalah atau situasi","Contoh: A menyebabkan B, B menyebabkan C dan C menyebabkan D. Oleh karena itu, A dapat saja menyebabkan C dan D"]},"4":{"header":"Membuat analisa yang kompleks","indicators":["Mengidentifikasi bagian-bagian dari suatu permasalahan yang kompleks dan menguraikannya menjadi bagian yang detil, serta menunjukkan hubungan sebab akibat untuk masing-masing bagian","Mengupas akar permasalahan secara sangat detil dan kompleks","Contoh: ’saya sudah menganalisis data pelanggan selama 5 tahun terakhir, dan melihat permasalahan mendasar yg dirasakan konsumen adalah.....’"]},"5":{"header":"Membuat rencana yang kompleks","indicators":["Menggunakan beberapa teknik analisa untuk menguraikan permasalahan yang kompleks","Menggunakan beberapa teknik analisa untuk mengidentifikasi beberapa solusi dan memberi bobot untuk setiap solusi","Contoh: ’permasalahan dlm produksi ini sangat kompleks dan saya sdh melakukan analisis dr berbagai aspek; ada bbrp alternatif solusi yg bisa dilakukan....’"]}}},"CO":{"name":"Concern for Order - CO","levels":{"1":{"header":"Menunjukkan kepedulian terhadap keteraturan dan kejelasan","indicators":["Memperlihatkan kepatuhan dan disiplin diri terhadap peraturan dan regulasi perusahaan secara konsisten","Bekerja berdasarkan \"kejelasan\" yang berlaku (dalam bentuk kebijakan, manual, prosedur)","Mengusahakan kejelasan peran, tugas, data, informasi, seringkali dalam bentuk tertulis","Contoh :  1. menanyakan aturan atau prosedur dalam melakukan suatu tugas atau pekerjaan,  2. te[at waktu dalam setiap hal 3. mematikan lampu dan AC ketika pulang"]},"2":{"header":"Memeriksa pekerjaan sendiri","indicators":["Memeriksa ulang akurasi, ketepatan data, informasi, atau hasil kerja sendiri sebelum digunakan oleh pihak lain","Memastikan bahwa pekerjaan selaras dengan peraturan, regulasi dan SOP perusahaan","Menjaga kualitas hasil pekerjaan sendiri","Contoh: ‘saya membuat brief, menulis dan mengecek kembali tulisan untuk memastikan semuanya benar’"]},"3":{"header":"Memeriksa pekerjaan sendiri atau pekerjaan orang lain","indicators":["Memonitor kualitas hasil kerja dan pekerjaan orang lain sebelum mulai menggunakannya dalam pekerjaan ataupun memberikannya kepada pihak lain","Melakukan pemeriksaan untuk memastikan apakah prosedur telah diikuti","Mendokumentasikan dengan jelas dan rinci mengenai aktivitas diri sendiri dan orang lain","Memastikan / mengkaji kualitas hasil pekerjaan / informasi dari orang lain yang akan digunakan ataupun diteruskan","Contoh: ’saya sepanjang hari mengecek bagaimana semuanya berjalan; saya keluar dan meilhat mekanik bekerja utk memastikan tdk ada debu di plat mesin’"]},"4":{"header":"Memonitor data atau proyek-proyek","indicators":["Memonitor kemajuan dari suatu proyek terhadap milestones dan batasan waktu (deadlines)","Memonitor data, menemukan kelemahan atau data yang hilang dan mencari informasi untuk melengkapinya","Melakukan review secara rutin terhadap progress / target","Contoh: ’saya mengadakan rapat untuk melihat kemajuan proyek, apa yang sudah dicapai dan apa yang belum’"]},"5":{"header":"Mengembangkan sistem","indicators":["Mengembangkan dan menggunakan sistem untuk mengorganisir dan mengetahui informasi","Menerapkan sistem untuk meningkatkan keteraturan dan kualitas data","Contoh: ‘saya menghabiskan waktu untuk meningkatkan alur dokumen dan penanganan material; saya menerapkan sistem untuk mengelola data dan umpan balik informasi’"]}}},"INT":{"name":"Inisiatif - INT","levels":{"1":{"header":"Bertindak atas peluang/masalah saat ini (jangka pendek)","indicators":["Mengidentifikasi dan mengambil tindakan atas peluang yang ada saat ini.","Bertindak atas masalah yang ada termasuk di dalamnya mengatasi hambatan-hambatan."]},"2":{"header":"Bertindak cepat/sigap dalam situasi krisis","indicators":["Bertindak cepat dan sigap (decisive) dalam situasi krisis atau situasi yang sangat mendesak karena waktu yang pendek.","Bertindak dengan sense of urgency di mana orang lain cenderung untuk menunggu, mempelajari dulu situasinya dan berharap masalah akan terselesaikan dengan sendirinya."]},"3":{"header":"Mengantisipasi Masalah untuk 3 Bulan ke Depan","indicators":["Mengantisipasi masalah yang mungkin muncul dalam kurun waktu 3 bulan ke depan."]},"4":{"header":"Mengantisipasi Masalah untuk 4 - 12 Bulan ke Depan","indicators":["Mengantisipasi masalah yang mungkin muncul dalam kurun waktu 4 - 12 bulan ke depan."]},"5":{"header":"Mengantisipasi Masalah lebih dari 1 Tahun Kedepan","indicators":["Mengantisipasi masalah yang mungkin muncul dalam kurun waktu 1 tahun ke depan."]}}},"INFO":{"name":"Information Seeking - INFO","levels":{"1":{"header":"Mengajukan pertanyaan","indicators":["Mengajukan pertanyaan langsung kepada orang yang ada, atau orang yang seharusnya memberikan jawaban atas situasi yang terjadi, seperti misalnya orang yang terlibat langsung sekalipun tidak hadir secara fisik","Menggunakan informasi yang tersedia, atau konsultasi dengan nara sumber yang ada","Contoh: ‘saya bertanya ke atasan saya spt apa prosedur yg harusnya dilakukan’"]},"2":{"header":"Melakukan penyelidikan secara pribadi","indicators":["Menginvestigasi terhadap suatu permasalahan atau situasi dan mencari tahu apa yang sebenarnya terjadi","Mencari dan bertanya kepada orang yang paling mengetahui permasalahan","Contoh: ‘saya mencari tahu apa yang sebenarnya terjadi waktu masalah itu terjadi’"]},"3":{"header":"Menggali lebih dalam","indicators":["Mengajukan serangkaian pertanyaan yang bersifat menyelidik untuk menggali akar permasalahan, atau hal yang tersembunyi di balik informasi yang diutarakan","Menghubungi orang lain yang tidak secara langsung terlibat, meminta pendapat, informasi pendukung, pengalaman, dll","Tidak berhenti pada jawaban pertama, mencari tahu mengapa sesuatu terjadi","Contoh: ’saya menghubungi pihak-pihak terkait utk mendapatkan masukan, dan mengumpulkan data-data tambahan’"]},"4":{"header":"Melakukan riset","indicators":["Melakukan upaya sistematik dalam waktu yang terbatas untuk memperoleh umpan balik atau informasi yang diperlukan","Melakukan investigasi mendalam dari sumber yang tidak biasa","Melakukan riset formal melalui surat kabar, majalah, jaringan komputer, atau sumber lainnya.  Hal ini bisa termasuk riset pasar, keuangan, atau pesaing.","Contoh: ’saya melakukan riset pasar yg mendalam utk mengetahui keinginan konsumen dgn jumlah responden di seluruh kota dimana ada produk kita’"]},"5":{"header":"Menggunakan sistemnya sendiri","indicators":["Memiliki sistem atau kebiasaan yang dikembangkan sendiri untuk mendapatkan informasi secara berkesinambungan (“management by walking around”, pertemuan informal secara periodik, atau penelusuran informasi dari suatu penerbitan, dsb.)","Melibatkan orang-orang yang secara normal tidak akan dilibatkan dan meminta mereka untuk mengumpulkan informasi yang dibutuhkan secara teratur","Contoh:  1. saya diskusi dengan OB untuk mendapat beberapa info tentang kondisi di perusahaan 2. saya mengadakan pertemuan rutin dg serikat buruh utk mendptkan masukan"]}}},"CT":{"name":"Conceptual Thinking- CT","levels":{"1":{"header":"Menggunakan aturan-aturan dasar","indicators":["Menggunakan aturan sederhana, nalar dan pengalaman masa lampau dalam mengenali suatu masalah atau situasi","Mengenali jika suatu peristiwa sekarang sama persis dengan peristiwa yang pernah terjadi di masa lampau","Contoh: ’Hal ini mengingatkan saya pada ...’"]},"2":{"header":"Mengenali pola","indicators":["Mampu mengenali pola, tren atau ketidaksesuai-an, ketika melihat suatu informasi atau situasi; dapat menggunakan analogi utk membantu pemahaman","Mengenali jika suatu peristiwa yang sekarang terjadi mempunyai kesamaan atau berbeda dengan peristiwa yang pernah terjadi di masa lampau; dapat mengidentifikasi persamaan dan perbedaannya","Contoh: ’saya melihat pola masalah yg terjadi sama dengan…’"]},"3":{"header":"Menerapkan perencanaan yang kompleks","indicators":["Menerapkan pengetahuan dari teori atau tren masa lalu dalam melihat situasi sekarang","Mengaplikasi dan memodifikasi konsep/ metode kompleks yang telah dipelajari secara tepat","Contoh: ’saya memodifikasi konsep pengelolaan gudang yg sebelumnya berhasil diterapkan di perusahaan saya yg lama, sesuai dg kondisi perusahaan yg saat ini saya hadapi’"]},"4":{"header":"Menyederhanakan data atau situasi yang kompleks","indicators":["Membuat situasi atau ide yang kompleks menjadi jelas, sederhana dan mudah dimengerti","Menggabungkan ide, permasalahan dan observasi menjadi penjelasan yang mudah dimengerti dan berguna","Menyampaikan observasi atau pengetahuan yang kompleks dengan cara yang lebih sederhana","Memadukan ide-ide dan informasi serta membuat data dari beberapa sumber menjadi lebih lengkap dan jelas","Contoh: ’saya melihat problem tsb secara sederhana adalah spt…”"]},"5":{"header":"Menciptakan konsep-konsep baru","indicators":["Membuat konsep baru (yang tidak tampak jelas bagi orang lain dan yang tidak dipelajari dari pendidikan atau pengalaman kerja sebelumnya) untuk menjelaskan situasi atau memecahkan masalah","Memikirkan sesuatu dengan cara yang sama sekali baru (Breakthrough thinking","Merubah paradigma dan memulai cara pemikiran yang baru","Contoh: ’saya mengusulkan cara baru dlm melakukan…”"]}}},"RB":{"name":"Membina Hubungan - RB","levels":{"1":{"header":"Membuat kontak informal","indicators":["Memulai hubungan informal/santai di tempat kerja, berbincang mengenai keluarga, olah raga, berita, dsb","Melakukan obrolan ringan tentang hal-hal yang berhubungan dengan keluarga, olahraga, berita koran, dsb.","Contoh: ’saya mengajak teman-teman kantor utk ngobrol di cafe sehabis jam kantor’"]},"2":{"header":"Membangun hubungan baik","indicators":["Membina hubungan persahabatan (informal/santai) dengan mitra kerja, pelanggan, atau pihak lain melalui kegiatan-kegiatan di luar kantor","Secara sadar berusaha membina atau memelihara hubungan baik dengan kenalan atau pelanggan","Contoh: ’saya mengikuti customer gathering dan berkenalan dg sebanyak mungkin pelangggan utk bisa mengenal mereka scr pribadi’"]},"3":{"header":"Melakukan kontak sosial","indicators":["Berpartisipasi secara aktif dalam kegiatan sosial","Menghadiri acara yang bersifat personal / keluarga dari kenalan / bawahan / rekan","Memprakarsai atau berpartisipasi dalam kegiatan atau pertemuan khusus untuk meningkatkan hubungan baik dengan pihak lain","Contoh: ’saya mengikuti kelompok pelayanan masyarakat dan terlibat aktif dalam kegaitan-kegiatan bakti sosial di berbagai tempat’"]},"4":{"header":"Membina hubungan pribadi","indicators":["Menciptakan persahabatan yang erat","Mengutarakan hal-hal yang bersifat pribadi demi menjalin dan memelihara hubungan","Contoh: ’saya sering bertemu dengan teman-teman alumni universitas, dan mengadakan berbagai kegiatan utk terus mempererat hubungan persahataban’"]},"5":{"header":"Membuat pertemanan yang akrab","indicators":["Membina atau meyokong pertemanan yang erat (misalnya bersosialisasi secara intensif dengannya termasuk keluarganya)","Didukung oleh pernyataan dari orang lain yang mendukung adanya pertemanan yang erat","Contoh: ’pd saat perusahaan membutuhkan banyak mitra utk kerjasama, saya menghubungi teman-teman dan network saya agar perusahaan mereka mau menjadi mitra’","Contoh : memperhatikan rekan kerja (anak buah) yang sakit / terkena bencana"]}}},"FLX":{"name":"Flexibility - FLX","levels":{"1":{"header":"Melihat situasi secara obyektif","indicators":["Bersedia untuk mengubah gagasan atau pandangan berdasarkan informasi baru atau bukti baru yang bertentangan","Menghargai sudut pandang dan pencapaian orang lain","Memberikan pujian atas prestasi atau pencapaian orang lain","Contoh: ‘saya melihat fakta yg disampaikan valid dan sebelumnya saya tidak ketahui, sehingga saya dpt menerima usulannya’"]},"2":{"header":"Mengaplikasikan peraturan atau prosedur dengan luwes","indicators":["Pada situasi yang spesifik, dapat menyesuaikan peraturan atau prosedur normal secara luwes untuk dapat menyelesaikan suatu pekerjaan dan/atau mencapai tujuan organisasi; sepanjang tidak menyimpang dari kebijakan perusahaan","Contoh :  1. oleh krn banyaknya permintaan konsumen pd saat peak season spt ini, maka utk sementara waktu saya menyesuai-kan sistem kerja agar dpt melayani pelanggan dg baik 2. memiliki kemampuan beradaptasi"]},"3":{"header":"Menyesuaikan taktik dengan situasi atau reaksi orang lain","indicators":["Mengubah perilaku atau pendekatan supaya sesuai dengan situasi yang ada dan orang lain","Sambil mempertahankan rencana atau strategi secara keseluruhan, merubah pendekatan mengenai bagaimana mencapai rencana tersebut","Melakukan penyesuaian tindakan atau perilaku berdasarkan situasi; sensitif terhadap perbedaan budaya","Contoh: ’saya melihat cara negosiasi spt itu tdk sesuai dg tipe mitra bisnis di daerah tsb, shg saya ubah’"]},"4":{"header":"Menyesuaikan strategi sendiri","indicators":["Mengubah keseluruhan rencana, sasaran, atau proyek (misalnya mengenai apa yang ingin dicapai) menyesuaikan dengan situa","Contoh: ’situasi krisis ekonomi yg melanda perusahaan membuat saya merubah strategi dan rencana pengembangan usaha yg akan dilakukan’"]},"5":{"header":"Membuat perubahan","indicators":["Membuat perubahan yang signifikan pada perusahaan atau pelanggan untuk menyelaraskan dengan kebutuhan situasi","Contoh: ’saya baru ditempatkan sbg pimpinan di perusahaan ini, dan mengevaluasi apa yg menjadi masalah selama ini; lalu saya melakukan perubahan personel, cara kerja, prosedur, dan fokus produk yg menjadi prioritas"]}}},"OC":{"name":"Organization Commitment - OC","levels":{"1":{"header":"Melakukan Upaya Penyesuaian","indicators":["Menghormati nilai-nilai organisasi, menuruti peraturan dan ketentuan yang berlaku","Mengikuti peraturan dan melakukan apa-apa yang diharapkan oleh jabatannya","Contoh: ’saya masih baru di perusahaan ini, dan saya melihat banyak yg berbeda dg perusahaan sebelumnya, tp saya berusaha menyesuaikan diri dg apa yg ditetapkan di perusahaan ini’"]},"2":{"header":"Meneladani kesetiaan","indicators":["Membantu yang lainnya untuk menyelesaikan pekerjaan.","Menghormati dan menerima  apa yang atasan lihat sebagai sesuatu yang penting","Menunjukkan kebanggaan, kesenangan, kesetiaan dan/atau dedikasi sebagai anggota dari organisasi","Mempromosikan dan/atau membela citra organisasi","Contoh :  1. memiliki sense of belonging dan keterikiatan  terhadap perusahaan 2. saya bangga menjadi bagian dari perusahaan ini dan bekerja dg baik utk menjaga citra perusahaan"]},"3":{"header":"Mendukung organisasi secara aktif","indicators":["Bertindak untuk mendukung misi dan tujuan organisasi","Menyelaraskan kegiatan dan prioritas pribadi untuk memenuhi kebutuhan/misi organisasi dan menyesuaikan diri dengan misi organisasi","Memahami kebutuhan untuk bekerja sama dengan orang lain untuk mencapai sasaran/tujuan organisasi","Contoh:  1. saya menyusun dg tim saya program-program yg diperlukan utk menunjang pencapaian tujuan organisasi sesuai strategi yg telah ditetapkan 2.  keinginan meningkatkan mutu perusahaan"]},"4":{"header":"Melakukan pengorbanan pribadi","indicators":["Menempatkan kepentingan organisasi di atas kepentingan sendiri.  Ini meliputi pengorbanan dalam hal identitas profesi, pilihan pribadi atau urusan keluarga","Contoh: ‘pada saat itu mesin pabrik itu harus diperbaiki segera, krn produksi harus dikejar utk memenuhi permintaan konsumen yg meningkat, shg saya memutuskan utk membatalkan liburan keluarga yg telah direncanakan sebelumnya’"]},"5":{"header":"Mengorbankan kepentingan unit demi kepentingan organisasi","indicators":["Mengorbankan kepentingan jangka pendek unit kerja untuk kepentingan jangka panjang perusahaan","Contoh: ‘saya mempelopori pemotongan anggaran dan pengurangan tenaga kerja di unit sendiri agar perusahaan dapat survive’"]}}},"OA":{"name":"Organization Awareness - OA","levels":{"1":{"header":"Memahami struktur organisasi secara formal","indicators":["Mengetahui / mengenali atau bagaimana  struktur formal suatu organisasi / hirarki dari organisasi","Memahami rantai komando, posisi berkuasa, peraturan-peraturan dan perundangan, SOP, dsb"]},"2":{"header":"Memahami struktur organisasi informal","indicators":["Mengetahui / mengenali dan atau menggunakan struktur informal dari sebuah organisasi","Mengetahui / mengenali kunci utama, orang-prang yang berpengaruh dsb. \"Key Person\"","Mengaplikasikan pengetauhan ini ketika struktur formal tidak dapat berjalan sesuai dengan yang diinginkan"]},"3":{"header":"Memahami iklim dan budaya organisasi","indicators":["Mengetahui / mengenali pembatasan organisasi yang tidak normatif – apa yang dapat dan tidak dapat disuatu waktu atau didalam posisi tertentu","Mengetahui / mengenali dan menggunakan budaya organisasi dan bahasa, dsb, yang akan menghasilkan respon yang terbaik"]},"4":{"header":"Memahami politik organisasi","indicators":["Mengetahui / mengenali kekuatan dan hubungan (politik) didalam organisasi (aliansi, persaingan) dengan pertimbangan yang dapat berdampak terhadap organisasi"]},"5":{"header":"Memahami masalah  / isu yang tidak tampak","indicators":["Mengetahui / mengenali alasan-alasan (tujuan) atas perilaku / keputusan organisasi yang sedang berjalan","Mengetahui / mengenali permasalahan-permasalahan, peluang-peluang atau kekuatan politik yang dapat mempengaruhi organisasi, (cth, trend pasar terkini, oerubahan demografis, kebijakan perdaganan nasional, isu-isu historikal yang dapat mempengaruhi peluang-peluang pasar)"]}}},"IMP":{"name":"Dampak dan Pengaruh - IMP","levels":{"1":{"header":"Menyatakan niat tetapi tidak melakukan tindakan tertentu","indicators":["Berniat / menunjukkan / menyampaikan niat untuk membuat pengaruh tertentu dengan Menyatakan perhatian akan perilaku kerja, cara kerja, dan hasil yang diharapkan, dll., tetapi tidak melakukan tindakan apapun","Contoh: ’saya merasa perlu utk menghubungi kedua belah pihak yang bertikai, krn kejadian itu dpt merusak citra perusahaan’"]},"2":{"header":"Melakukan tindakan untuk membujuk","indicators":["Membujuk secara langsung dalam diskusi atau presentasi dengan menggunakan alasan, data, minat pihak lain dan dengan menggunakan contoh, alat peraga, demonstrasi, dll","Menggunakan solusi alternatif; memberikan pros and cons untuk setiap alternatif","Tidak melakukan tindakan nyata untuk beradaptasi dengan tingkat dan minat audience/ lawan bicara","Contoh: ’saya menyampaikan data-data yg mendukung utk memlilih solusi yg ditawarkan’"]},"3":{"header":"Melakukan beberapa tindakan untuk membujuk","indicators":["Melakukan beberapa tindakan untuk membujuk tanpa berusaha menyesuaikan dengan tingkatan dan minat audience/ lawan bicara Ini termasuk persiapan seksama atas data untuk presentasi","Memberikan dua atau lebih argumen yang berbeda dalam presentasi atau diskusi","Contoh: ’saya telah menunjukkan pengalaman dr pihak lain dlm menerapkan teknologi tsb, dan jg telah memberikan data hasil simulasi uji coba’"]},"4":{"header":"Memperhitungkan dampak dari tindakan atau perkataan","indicators":["Mengadaptasi perilaku atau pembicaraan agar sesuai dengan minat dan tingkatan audience / lawan bicara Mengantisipasi dampak dari tindakan diri sendiri terhadap pandangan orang lain","Berpikir atau bertindak secara dramatis atau tidak biasa dalam rangka memperoleh pengaruh khusus","Mengantisipasi reaksi orang lain","Contoh: ’saya mengirim surat protes kepada Pemda krn dirugikan, shg akhirnya mereka memberikan ganti rugi’"]},"5":{"header":"Menggunakan pengaruh tidak langsung & strategi yang kompleks","indicators":["Menggunakan serangkaian pengaruh tidak langsung: “mempengaruhi A supaya ia mempengaruhi B sehingga B akan mempengaruhi C”.","Mengambil tindakan untuk mempengaruhi, setiap langkah disesuaikan dengan hadirin","Menggunakan ahli atau pihak ketiga untuk mempengaruhi","Menggunakan hubungan formal dan tidak formal untuk mendapatkan dukungan terhadap ide","Menggunakan strategi koalisi dan memadukan unsur politis untuk mendukung pengambilan keputusan","Menggunakan pemahaman mendalam dalam berinteraksi di dalam kelompok untuk keperluan tertentu (misalnya memberikan atau menahan informasi untuk memperoleh pengaruh tertentu)","Contoh: ’saya dekati tokoh informal disitu shg masy daerah itu bisa menerima perusahaan’"]}}}}};
+const INST="Silakan klik pada bagian yang menunjukkan konsistensi perilaku anda saat bekerja. Ini bukan pilihan ganda, sehingga anda dapat memilih lebih dari 1 pernyataan. Namun apabila anda merasa perilaku dibawah ini tidak menunjukkan perilaku konsisten anda, maka anda tidak perlu melanjutkan pengisian.";
+let S={name:'',nik:'',div:'',job:'',sub:false,secs:[],cur:0,ans:{}};
+
+(function(){
+  var sel=document.getElementById('f-div');
+  D.divisi.forEach(function(d){var o=document.createElement('option');o.value=d;o.textContent=d;sel.appendChild(o);});
+})();
+
+function togSub(){
+  S.sub=!S.sub;
+  document.getElementById('tk').className='tk'+(S.sub?' on':'');
+  document.getElementById('tl').textContent=S.sub?'Ya — saya memiliki bawahan langsung':'Tidak — saya tidak memiliki bawahan';
+  document.getElementById('tog').className='tog'+(S.sub?' on':'');
+}
+
+function chk(){
+  var ok=document.getElementById('f-name').value.trim()&&
+         document.getElementById('f-nik').value.trim()&&
+         document.getElementById('f-div').value&&
+         document.getElementById('f-job').value.trim();
+  document.getElementById('btn-start').disabled=!ok;
+}
+
+function start(){
+  S.name=document.getElementById('f-name').value.trim();
+  S.nik=document.getElementById('f-nik').value.trim();
+  S.div=document.getElementById('f-div').value;
+  S.job=document.getElementById('f-job').value.trim();
+  S.ans={};S.cur=0;S.secs=[];
+
+  S.secs.push({k:'core',label:'CORE COMPETENCY',desc:'Berlaku untuk seluruh karyawan Otsuka tanpa terkecuali.',comps:Object.keys(D.core)});
+  if(S.sub) S.secs.push({k:'role',label:'ROLE COMPETENCY',desc:'Kompetensi manajerial untuk karyawan yang memiliki bawahan langsung.',comps:Object.keys(D.role)});
+  var jf=D.div_jf[S.div]||[];
+  var vj=jf.filter(function(id){return D.jf[id];});
+  if(vj.length) S.secs.push({k:'jf',label:'JOB FAMILY COMPETENCY',desc:'Kompetensi spesifik berdasarkan fungsi jabatan di divisimu.',comps:vj});
+
+  document.getElementById('hSub').textContent=S.name+' — '+S.job;
+  document.getElementById('pw').style.display='block';
+  show('s-assess');render();
+}
+
+function render(){
+  var sec=S.secs[S.cur],tot=S.secs.length;
+  document.getElementById('pf').style.width=Math.round(S.cur/tot*100)+'%';
+  document.getElementById('pl').textContent='Section '+(S.cur+1)+' dari '+tot+' \u2014 '+sec.label;
+  document.getElementById('bprev').style.visibility=S.cur===0?'hidden':'visible';
+  document.getElementById('bnext').textContent=S.cur===tot-1?'Kirim \u2192':'Lanjut \u2192';
+
+  var c=document.getElementById('ac');c.innerHTML='';
+
+  var sh=document.createElement('div');
+  sh.className='sh '+sec.k;
+  sh.innerHTML='<div class="shr"><div class="sht">'+sec.label+'</div><div class="shb">'+sec.comps.length+' Kompetensi</div></div><div class="shd">'+sec.desc+'</div>';
+  c.appendChild(sh);
+
+  sec.comps.forEach(function(cid){
+    var pool=sec.k==='core'?D.core:sec.k==='role'?D.role:D.jf;
+    var comp=pool[cid];if(!comp)return;
+    var blk=document.createElement('div');blk.className='cb';
+    blk.innerHTML='<div class="ch"><div class="cn">Kompetensi \u2014 '+comp.name+'</div></div>';
+    var body=document.createElement('div');
+    var lvls=Object.keys(comp.levels).map(Number).sort(function(a,b){return a-b;});
+    lvls.forEach(function(lvl){
+      var ld=comp.levels[String(lvl)];
+      if(!ld||!ld.indicators||!ld.indicators.length)return;
+      var lb=document.createElement('div');lb.className='lb';
+      lb.innerHTML='<div class="lh"><div class="lt">'+comp.name+' Level '+lvl+'</div><div class="ls">'+ld.header+'</div><div class="li">('+INST+')</div></div><div class="il" id="il-'+cid+'-'+lvl+'"></div>';
+      var list=lb.querySelector('#il-'+cid+'-'+lvl);
+      ld.indicators.forEach(function(ind,idx){
+        var ck=!!(S.ans[cid]&&S.ans[cid][lvl]&&S.ans[cid][lvl][idx]);
+        var item=document.createElement('label');
+        item.className='ii'+(ck?' on':'');
+        item.htmlFor='c-'+cid+'-'+lvl+'-'+idx;
+        item.innerHTML='<input type="checkbox" id="c-'+cid+'-'+lvl+'-'+idx+'" data-cid="'+cid+'" data-lvl="'+lvl+'" data-idx="'+idx+'"'+(ck?' checked':'')+' onchange="onc(this)"><span class="in">'+(idx+1)+'.</span><span class="it">'+ind+'</span>';
+        list.appendChild(item);
+      });
+      body.appendChild(lb);
+    });
+    blk.appendChild(body);c.appendChild(blk);
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function onc(cb){
+  var cid=cb.dataset.cid,lvl=+cb.dataset.lvl,idx=+cb.dataset.idx;
+  if(!S.ans[cid])S.ans[cid]={};
+  if(!S.ans[cid][lvl])S.ans[cid][lvl]={};
+  S.ans[cid][lvl][idx]=cb.checked;
+  cb.closest('.ii').classList.toggle('on',cb.checked);
+}
+
+function next(){if(S.cur<S.secs.length-1){S.cur++;render();}else{submit();}}
+function prev(){if(S.cur>0){S.cur--;render();}}
+
+function lvl(cid,comp){
+  var lvls=Object.keys(comp.levels).map(Number).sort(function(a,b){return a-b;});
+  var act=0;
+  for(var i=0;i<lvls.length;i++){
+    var l=lvls[i],ld=comp.levels[String(l)];
+    if(!ld||!ld.indicators||!ld.indicators.length)continue;
+    var ans=(S.ans[cid]||{})[l]||{};
+    if(Object.values(ans).filter(Boolean).length===ld.indicators.length){act=l;}else{break;}
+  }
+  return act;
+}
+
+function submit(){
+  show('s-send');
+  var ts=new Date().toISOString(),sid='TNA-'+Date.now(),rows=[];
+  S.secs.forEach(function(sec){
+    var pool=sec.k==='core'?D.core:sec.k==='role'?D.role:D.jf;
+    sec.comps.forEach(function(cid){
+      var comp=pool[cid];if(!comp)return;
+      rows.push({timestamp:ts,submission_id:sid,employee_name:S.name,nik:S.nik,
+        division:S.div,job_title:S.job,has_subordinat:S.sub?'Ya':'Tidak',
+        competency_id:cid,competency_name:comp.name,competency_type:sec.k,
+        actual_level:lvl(cid,comp)});
+    });
+  });
+  var payload={submission_id:sid,timestamp:ts,rows:rows};
+  var URL='https://script.google.com/macros/s/AKfycbzfSGDjej5oG1T_Or_6GVboWUAC_FI5c9Teh29cE2e6O0wB15Z10xQ4jPC2-7n0GZTFoQ/exec';
+
+  function done(){
+    document.getElementById('pf').style.width='100%';
+    document.getElementById('pl').textContent='Selesai \u2713';
+    var t=function(k,v){return '<tr><td style="padding:6px 0;color:var(--t3);width:42%">'+k+'</td><td style="font-weight:600">'+v+'</td></tr>';};
+    document.getElementById('dd').innerHTML='<table style="width:100%;font-size:13px;border-collapse:collapse">'+
+      t('Nama',S.name)+t('NIK',S.nik)+t('Divisi',S.div)+t('Jabatan',S.job)+
+      t('Total Kompetensi',rows.length+' kompetensi')+
+      t('ID Submission','<span style="font-family:\'DM Mono\',monospace;font-size:11px">'+sid+'</span>')+
+      '</table>';
+    show('s-done');
+  }
+
+  if(URL==='https://script.google.com/macros/s/AKfycbzfSGDjej5oG1T_Or_6GVboWUAC_FI5c9Teh29cE2e6O0wB15Z10xQ4jPC2-7n0GZTFoQ/exec'){console.log('DEMO:',JSON.stringify(payload,null,2));setTimeout(done,900);return;}
+  fetch(URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).then(done).catch(done);
+}
+
+function show(id){document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active');});document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+
+function reset(){
+  S={name:'',nik:'',div:'',job:'',sub:false,secs:[],cur:0,ans:{}};
+  ['f-name','f-nik','f-job'].forEach(function(id){document.getElementById(id).value='';});
+  document.getElementById('f-div').value='';
+  document.getElementById('tk').className='tk';
+  document.getElementById('tl').textContent='Tidak \u2014 saya tidak memiliki bawahan';
+  document.getElementById('tog').className='tog';
+  document.getElementById('btn-start').disabled=true;
+  document.getElementById('pw').style.display='none';
+  document.getElementById('pf').style.width='0%';
+  document.getElementById('pl').textContent='';
+  document.getElementById('hSub').textContent='Silakan lengkapi data diri untuk memulai';
+  show('s-welcome');
+}
+</script>
+</body>
+</html>
